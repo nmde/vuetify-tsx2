@@ -11,6 +11,8 @@
     "importHelpers": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
     "declaration": true,
     "inlineSourceMap": true,
     "baseUrl": ".",
