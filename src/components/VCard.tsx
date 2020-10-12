@@ -1,21 +1,42 @@
+import { DirectiveOptions } from 'vue';
+import { Route } from 'vue-router';
 import { ofType } from 'vue-tsx-support';
 import { VCard } from 'vuetify/lib';
 
-import {
-  Colorable,
-  Disableable,
-  Measurable,
-  Rippleable,
-  Routable,
-} from '../shared/types';
-
 export default ofType<Props>().convert(VCard as any);
 
-type Props = Colorable &
-  Disableable &
-  Measurable &
-  Rippleable &
-  Routable & {
-    title?: boolean;
-    raised?: boolean;
-  };
+type Props = {
+  activeClass?: boolean;
+  append?: boolean;
+  color?: string;
+  dark?: boolean;
+  disabled?: boolean;
+  elevation?: number | string;
+  exact?: boolean;
+  exactActiveClass?: string;
+  flat?: boolean;
+  height?: number | string;
+  hover?: boolean;
+  href?: string | object;
+  img?: string;
+  light?: boolean;
+  link?: boolean;
+  loaderHeight?: boolean;
+  loading?: boolean;
+  maxHeight?: number | string;
+  maxWidth?: number | string;
+  minHeight?: number | string;
+  minWidth?: number | string;
+  nuxt?: boolean;
+  outlined?: boolean;
+  raised?: boolean;
+  replace?: boolean;
+  ripple?: boolean | DirectiveOptions;
+  rounded?: boolean | string;
+  shaped?: boolean;
+  tag?: string;
+  target?: string;
+  title?: boolean;
+  to?: string | Route;
+  width?: number | string;
+};

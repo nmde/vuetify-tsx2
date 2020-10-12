@@ -22,9 +22,6 @@
       "vue-tsx-support/options/enable-vue-router",
       "vuetify"
     ],
-    "paths": {
-      "@/*": ["src/*"]
-    },
     "lib": ["dom", "dom.iterable", "esnext", "scripthost"]
   },
   "include": [
